@@ -112,6 +112,11 @@ header a{
     top: 10vw;
     left: 0vw;
     z-index: 2;
+
+
+
+
+
   }
   
   #welcome-section h1{
@@ -139,7 +144,21 @@ header a{
     
     word-spacing: 2px;
     letter-spacing: 5px;
-  }
+
+
+    animation: typewriter 5s steps(20) 1s 1 normal both,
+             blinkTextCursor 500ms steps(20) infinite normal;
+}
+@keyframes typewriter{
+  from{width: 0;}
+  to{width: 5em;}
+}
+@keyframes blinkTextCursor{
+  from{border-right-color: rgba(255,255,255,.75);}
+  to{border-right-color: transparent;}
+}
+
+  
   
   /* END WELCOME-SECTION */
   
